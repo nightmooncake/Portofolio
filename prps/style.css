@@ -1,0 +1,261 @@
+*{
+    padding:0 ;
+    margin:0 ;
+}
+
+body{
+    width: 100%;
+    font-family: Verdana,  Tahoma, sans-serif;
+    background-color: #57b95f;
+}
+.wrapper{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.moving-text{
+    animation: moveRightToLetf 10s linear infinite;
+}
+
+@keyframes moveRightToLetf {
+    0%{
+        transform: translatex(100%)
+    }
+    100%{
+        transform: translatex(-100%)
+    }
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+h2{
+    font-size:20px;
+    font-family: 600;
+}
+
+h3{
+    font: #fff;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #000;
+}
+
+h4{
+    font: rgb(0, 0, 0);
+    padding-top: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/*Halaman Buku*/
+
+.buku{
+    padding:  0 6px;
+    margin-right: 10px;
+    float: left;
+    border: 1px solid #dedede;
+    width: 23%;
+}
+
+.gallery{
+}
+
+.foto img{
+    padding:  5px ;
+    width: 100%;
+    height: 250px;
+}
+
+.judul{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 0 3px 0;
+    text-align: left;
+}
+
+.penulis{
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-style: inherit;
+    font-size: 20px;
+    color: #d4d2db;
+}
+
+a.hover{
+    color: #000;
+}
+
+#container{
+    max-width: 1140px;
+    text-align: left;
+    background: #fff;
+    overflow: hidden;
+    border: 0px solid #d9d9d9;
+    margin: 0px 90px;
+    padding: 20px 20px 20px 20px;
+}
+
+.header{
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px 0 0 10px;
+    text-align: center;
+    border: #fcfcfc;
+    background-image: url(logo.jpg)
+}
+
+.heade h1{
+    font-size: 40px;
+    color: #000;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+/* main */
+
+.letf{
+    width: 200px;
+    color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 20px 10px 10px 0px ;
+    float: left;
+    background-color: #0dca2d;
+}
+
+.letf ul{
+    list-style-type: none;
+}
+
+.letf ul li {
+    display: block;
+}
+
+.letf ul li a {
+    display: block;
+    font-size: 17px;
+    border-bottom: 1px dotted #d4d2db;
+    margin-bottom:  10px;
+    padding: 10px 5px;
+    font: #64bed4;
+}
+
+.letf ul li a:hover{
+    color:#ca1414;
+}
+
+.middle{
+    width: 500px;
+    border: 1px solid #dedede;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+}
+
+.middle img{
+    background-image: img src="images/hitam.jpg";
+    max-width: 100%;
+    height: auto;
+}
+
+.middle{
+    font-weight: bold;
+}
+
+.middle2{
+    width: 800px;
+    height: 100%;
+    padding: 30px;
+    margin: 10px;
+    float: left;
+}
+
+.middle2 a{
+    font-weight: bold;
+}
+
+.right{
+    width: 280px;
+    color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+    float: right;
+    background-color: #281e5a;
+}
+.right{
+    list-style: none;
+}
+
+.right ul li{
+    display: block;
+}
+
+.right ul li a{
+    display: block;
+    font-size: 17px;
+    border-bottom: 1px dotted #d4d2db;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.right ul li a:hover{
+    color: #ca1414;
+}
+
+.footer{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #000;
+    clear:both;
+    border: 1px solid #0960b3;
+    padding: 15px;
+}
+
+@media screen  and(max-width: 995px){
+      #container{
+        width: 100px;
+      }
+      #letf-columm{
+        width: 70%;
+      }
+      #right-columm{
+        width: 30px;
+      }
+      img{
+        width: 100%;
+      }
+}
+/* MEDIA QUIRIES (Responsive )********/
+
+@media screen and (max-width:1140px){
+    .container{
+        width: 100%;
+    }
+    .letf{
+        width: 25%;
+        background: #0c7575d7;
+    }
+    .middle{
+        width: 68%;
+        float: right;
+    }
+    .middle2{
+        width: 90%;
+        float: right;
+    }
+}
+    
